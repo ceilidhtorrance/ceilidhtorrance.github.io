@@ -3,4 +3,4 @@ title: "My first weeks in MDS"
 author: "Ceilidh"
 date: 2026-09-11
 ---
-![Orientation day on campus.](ubc_campus.jpeg)
+![Orientation day on campus.](ubc_campus.jpg)
