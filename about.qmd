@@ -1,5 +1,19 @@
 ---
-title: "About"
+title: "About Ceilidh"
 ---
 
-About this site
+About Me
+
+Hi! My name is Ceilidh (pronounced like Kaylee), and I’m originally from Calgary, Alberta. I completed my undergraduate degree at the University of Victoria before starting my career as a Marketing Software Consultant. For the past five years, I’ve worked with clients to develop and implement marketing technology solutions, troubleshoot challenges, analyze data, and help improve their marketing strategies.
+
+Why Data Science?
+
+Throughout my work as a Marketing Software Consultant, I became increasingly interested in the data behind the decisions I was helping clients make. I enjoyed working with large datasets, identifying trends and patterns, and using data to better understand customer behaviour and solve problems. This interest ultimately led me to the Master of Data Science program at UBC. I’m excited to build on my previous experience while developing a stronger foundation in data science, statistics, programming, and data analysis.
+
+Outside of Data Science
+
+When I’m not studying, I enjoy spending time outdoors, exploring Vancouver and trying new restaurants and cafés. I also enjoy staying active, spending time with friends, and finding new things to do around the city. I’m looking forward to balancing the academic side of the MDS program with plenty of opportunities to explore and enjoy Vancouver!
+
+Milestone 1
+
+For Milestone 1, I’m learning how to use the command line to create and manage directories and files. This is helping me become more comfortable working in the command-line environment and building the technical skills I’ll use throughout the MDS program.
