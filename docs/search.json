@@ -1,16 +1,30 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ceilidh Website",
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Orientation day on campus."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nCeilidh\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Ceilidh",
     "section": "",
-    "text": "About this site"
+    "text": "About Me\nHi! My name is Ceilidh (pronounced like Kaylee), and I’m originally from Calgary, Alberta. I completed my undergraduate degree at the University of Victoria before starting my career as a Marketing Software Consultant. For the past five years, I’ve worked with clients to develop and implement marketing technology solutions, troubleshoot challenges, analyze data, and help improve their marketing strategies.\nWhy Data Science?\nThroughout my work as a Marketing Software Consultant, I became increasingly interested in the data behind the decisions I was helping clients make. I enjoyed working with large datasets, identifying trends and patterns, and using data to better understand customer behaviour and solve problems. This interest ultimately led me to the Master of Data Science program at UBC. I’m excited to build on my previous experience while developing a stronger foundation in data science, statistics, programming, and data analysis.\nOutside of Data Science\nWhen I’m not studying, I enjoy spending time outdoors, exploring Vancouver and trying new restaurants and cafés. I also enjoy staying active, spending time with friends, and finding new things to do around the city. I’m looking forward to balancing the academic side of the MDS program with plenty of opportunities to explore and enjoy Vancouver!\nMilestone 1\nFor Milestone 1, I’m learning how to use the command line to create and manage directories and files. This is helping me become more comfortable working in the command-line environment and building the technical skills I’ll use throughout the MDS program."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ceilidh Torrance",
+    "section": "",
+    "text": "My name is Ceilidh (pronounced like Kaylee). I am from Calgary, AB. I did my undergraduate degree at the University of Victoria, then worked as a Marketing Software Consultant for 5 years prior to joining the MDS program. I am looking forward to learning more about data science and data analysis in this program.\nMilestone 1 focuses on using the command line to create and manage directories and files."
   }
 ]
