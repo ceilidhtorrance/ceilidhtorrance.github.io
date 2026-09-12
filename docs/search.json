@@ -4,7 +4,7 @@
     "href": "posts/first-weeks/index.html",
     "title": "My first weeks in MDS",
     "section": "",
-    "text": "Orientation day on campus."
+    "text": "UBC campus.\n\n\nThe first couple of weeks in the UBC Master of Data Science program has been a busy but exciting introduction to what the next year will look like. The first week has already involved getting familiar with new tools and workflows, working through course material, and adjusting to the pace of the program.\nOne of the biggest takeaways from my first week has been how much there is still to learn. Some of the technical setup has been a learning experience in itself, but I’m starting to feel more comfortable navigating these new environments. I’m looking forward to continuing to develop these skills, meeting more of my classmates, and seeing how much I can learn and accomplish throughout the MDS program."
   },
   {
     "objectID": "blog.html",
@@ -18,7 +18,35 @@
     "href": "about.html",
     "title": "About Ceilidh",
     "section": "",
-    "text": "About Me\nHi! My name is Ceilidh (pronounced like Kaylee), and I’m originally from Calgary, Alberta. I completed my undergraduate degree at the University of Victoria before starting my career as a Marketing Software Consultant. For the past five years, I’ve worked with clients to develop and implement marketing technology solutions, troubleshoot challenges, analyze data, and help improve their marketing strategies.\nWhy Data Science?\nThroughout my work as a Marketing Software Consultant, I became increasingly interested in the data behind the decisions I was helping clients make. I enjoyed working with large datasets, identifying trends and patterns, and using data to better understand customer behaviour and solve problems. This interest ultimately led me to the Master of Data Science program at UBC. I’m excited to build on my previous experience while developing a stronger foundation in data science, statistics, programming, and data analysis.\nOutside of Data Science\nWhen I’m not studying, I enjoy spending time outdoors, exploring Vancouver and trying new restaurants and cafés. I also enjoy staying active, spending time with friends, and finding new things to do around the city. I’m looking forward to balancing the academic side of the MDS program with plenty of opportunities to explore and enjoy Vancouver!\nMilestone 1\nFor Milestone 1, I’m learning how to use the command line to create and manage directories and files. This is helping me become more comfortable working in the command-line environment and building the technical skills I’ll use throughout the MDS program."
+    "text": "Hi! My name is Ceilidh (pronounced like Kaylee), and I’m originally from Calgary, Alberta. I completed my undergraduate degree at the University of Victoria before starting my career as a Marketing Software Consultant. For the past five years, I’ve worked with clients to develop and implement marketing technology solutions, troubleshoot challenges, analyze data, and help improve their marketing strategies."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About Ceilidh",
+    "section": "",
+    "text": "Hi! My name is Ceilidh (pronounced like Kaylee), and I’m originally from Calgary, Alberta. I completed my undergraduate degree at the University of Victoria before starting my career as a Marketing Software Consultant. For the past five years, I’ve worked with clients to develop and implement marketing technology solutions, troubleshoot challenges, analyze data, and help improve their marketing strategies."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About Ceilidh",
+    "section": "Why Data Science?",
+    "text": "Why Data Science?\nThroughout my work as a Marketing Software Consultant, I became increasingly interested in the data behind the decisions I was helping clients make. I enjoyed working with large datasets, identifying trends and patterns, and using data to better understand customer behaviour and solve problems. This interest ultimately led me to the Master of Data Science program at UBC. I’m excited to build on my previous experience while developing a stronger foundation in data science, statistics, programming, and data analysis."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About Ceilidh",
+    "section": "Outside of Data Science",
+    "text": "Outside of Data Science\nWhen I’m not studying, I enjoy spending time outdoors, exploring Vancouver and trying new restaurants and cafés. I also enjoy staying active, spending time with friends, and finding new things to do around the city. I’m looking forward to balancing the academic side of the MDS program with plenty of opportunities to explore and enjoy Vancouver!"
+  },
+  {
+    "objectID": "about.html#milestone-1",
+    "href": "about.html#milestone-1",
+    "title": "About Ceilidh",
+    "section": "Milestone 1",
+    "text": "Milestone 1\nFor Milestone 1, I’m learning how to use the command line to create and manage directories and files. This is helping me become more comfortable working in the command-line environment and building the technical skills I’ll use throughout the MDS program."
   },
   {
     "objectID": "index.html",
