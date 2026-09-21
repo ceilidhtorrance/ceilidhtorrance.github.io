@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ceilidh Torrance",
+    "objectID": "posts/milestone3_r/index.html",
+    "href": "posts/milestone3_r/index.html",
+    "title": "Penguin Analysis in R",
     "section": "",
-    "text": "My name is Ceilidh (pronounced like Kaylee). I am from Calgary, AB. I did my undergraduate degree at the University of Victoria, then worked as a Marketing Software Consultant for 5 years prior to joining the MDS program. I am looking forward to learning more about data science and data analysis in this program.\nMilestone 1 focuses on using the command line to create and manage directories and files."
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "UBC campus.\n\n\nThe first couple of weeks in the UBC Master of Data Science program has been a busy but exciting introduction to what the next year will look like. The first week has already involved getting familiar with new tools and workflows, working through course material, and adjusting to the pace of the program.\nOne of the biggest takeaways from my first week has been how much there is still to learn. Some of the technical setup has been a learning experience in itself, but I’m starting to feel more comfortable navigating these new environments. I’m looking forward to continuing to develop these skills, meeting more of my classmates, and seeing how much I can learn and accomplish throughout the MDS program."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Penguin Analysis in Python\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nCeilidh Torrance\n\n\n\n\n\n\n\n\n\n\n\n\nPenguin Analysis in R\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nCeilidh Torrance\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nCeilidh\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -42,17 +56,17 @@
     "text": "Milestone 1\nFor Milestone 1, I’m learning how to use the command line to create and manage directories and files. This is helping me become more comfortable working in the command-line environment and building the technical skills I’ll use throughout the MDS program."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ceilidh Torrance",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nCeilidh\n\n\n\n\n\nNo matching items"
+    "text": "My name is Ceilidh (pronounced like Kaylee). I am from Calgary, AB. I did my undergraduate degree at the University of Victoria, then worked as a Marketing Software Consultant for 5 years prior to joining the MDS program. I am looking forward to learning more about data science and data analysis in this program.\nMilestone 1 focuses on using the command line to create and manage directories and files."
   },
   {
-    "objectID": "posts/first-weeks/index.html",
-    "href": "posts/first-weeks/index.html",
-    "title": "My first weeks in MDS",
+    "objectID": "posts/milestone3_py/index.html",
+    "href": "posts/milestone3_py/index.html",
+    "title": "Penguin Analysis in Python",
     "section": "",
-    "text": "UBC campus.\n\n\nThe first couple of weeks in the UBC Master of Data Science program has been a busy but exciting introduction to what the next year will look like. The first week has already involved getting familiar with new tools and workflows, working through course material, and adjusting to the pace of the program.\nOne of the biggest takeaways from my first week has been how much there is still to learn. Some of the technical setup has been a learning experience in itself, but I’m starting to feel more comfortable navigating these new environments. I’m looking forward to continuing to develop these skills, meeting more of my classmates, and seeing how much I can learn and accomplish throughout the MDS program."
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER."
   }
 ]

@@ -1,0 +1,8 @@
+---
+title: "Penguin Analysis in Python"
+author: "Ceilidh Torrance"
+date: 2026-09-21
+---
+
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/),
+Palmer Station Antarctica LTER.
