@@ -6,3 +6,23 @@ date: 2026-09-21
 
 Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/),
 Palmer Station Antarctica LTER.
+
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+
+penguins <- penguins
+
+head(penguins)
+summary(penguins)
+```
+
+```{r}
+avg_mass <- penguins |>
+  group_by(species) |>
+  summarise(
+    mean_body_mass = mean(body_mass_g, na.rm = TRUE)
+  )
+
+avg_mass
+```
