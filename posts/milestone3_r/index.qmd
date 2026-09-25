@@ -30,6 +30,8 @@ Found the median mass of each penguin species, displayed as a table. Shows that 
 
 ## Penguin Features
 ```{r}
+#| message: false
+#| warning: false
 penguin_features <- penguins |> 
   group_by(species, sex) |> 
   summarise(
