@@ -4,6 +4,70 @@ author: "Ceilidh Torrance"
 date: 2026-09-21
 ---
 
+## Data - Palmer Penguins
 Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/),
 Palmer Station Antarctica LTER.
 
+```{python}
+#| message: false
+#| warning: false
+from palmerpenguins import load_penguins
+import pandas as pd
+import matplotlib.pyplot as plt
+
+penguins = load_penguins()
+```
+
+## Species Median Mass
+```{python}
+median_mass = (
+    penguins
+    .groupby("species", as_index=False)
+    .agg(median_body_mass=("body_mass_g", "median"))
+)
+
+median_mass
+```
+I calculated the median body mass for each penguin species and displayed the results as a table. The results show that Gentoo penguins have the largest median body mass.
+
+## Penguin Features
+```{python}
+penguin_features = (
+    penguins
+    .groupby(["species", "sex"], as_index=False)
+    .agg(
+        mean_bill_length=("bill_length_mm", "mean"),
+        mean_bill_depth=("bill_depth_mm", "mean"),
+        mean_flipper_length=("flipper_length_mm", "mean"),
+        mean_body_mass=("body_mass_g", "mean")
+    )
+)
+
+penguin_features
+```
+I calculated the average physical features of penguins by species and sex and displayed the results as a table.
+
+## Penguin Mass Graph
+```{python}
+#| label: fig-penguin-mass
+#| fig-cap: "Mean body mass of penguins by species and sex."
+
+fig, ax = plt.subplots()
+
+penguin_features.pivot(
+    index="species",
+    columns="sex",
+    values="mean_body_mass"
+).plot(
+    kind="bar",
+    ax=ax
+)
+
+ax.set_title("Mean Body Mass of Penguins")
+ax.set_xlabel("Species")
+ax.set_ylabel("Mean Body Mass (g)")
+ax.legend(title="Sex")
+
+plt.show()
+```
+The graph displays the mean body mass of penguins by species and sex. Gentoo penguins have the highest average body mass, while the average male penguins are larger than the average female penguins within each species.

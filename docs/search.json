@@ -4,7 +4,35 @@
     "href": "posts/milestone3_r/index.html",
     "title": "Penguin Analysis in R",
     "section": "",
-    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER.\n\nlibrary(palmerpenguins)\n\n\nAttaching package: 'palmerpenguins'\n\n\nThe following objects are masked from 'package:datasets':\n\n    penguins, penguins_raw\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.1     ✔ readr     2.2.0\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.2     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\npenguins &lt;- penguins\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\nsummary(penguins)\n\n      species          island    bill_length_mm  bill_depth_mm  \n Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  \n Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  \n Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  \n                                 Mean   :43.92   Mean   :17.15  \n                                 3rd Qu.:48.50   3rd Qu.:18.70  \n                                 Max.   :59.60   Max.   :21.50  \n                                 NAs    :2       NAs    :2      \n flipper_length_mm  body_mass_g       sex           year     \n Min.   :172.0     Min.   :2700   female:165   Min.   :2007  \n 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  \n Median :197.0     Median :4050   NAs   : 11   Median :2008  \n Mean   :200.9     Mean   :4202                Mean   :2008  \n 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  \n Max.   :231.0     Max.   :6300                Max.   :2009  \n NAs    :2         NAs    :2                                 \n\n\n\navg_mass &lt;- penguins |&gt;\n  group_by(species) |&gt;\n  summarise(\n    mean_body_mass = mean(body_mass_g, na.rm = TRUE)\n  )\n\navg_mass\n\n# A tibble: 3 × 2\n  species   mean_body_mass\n  &lt;fct&gt;              &lt;dbl&gt;\n1 Adelie             3701.\n2 Chinstrap          3733.\n3 Gentoo             5076."
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER.\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "posts/milestone3_r/index.html#data---palmer-penguins",
+    "href": "posts/milestone3_r/index.html#data---palmer-penguins",
+    "title": "Penguin Analysis in R",
+    "section": "",
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER.\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "posts/milestone3_r/index.html#species-median-mass",
+    "href": "posts/milestone3_r/index.html#species-median-mass",
+    "title": "Penguin Analysis in R",
+    "section": "Species Median Mass",
+    "text": "Species Median Mass\n\nmedian_mass &lt;- penguins |&gt;\n  group_by(species) |&gt;\n  summarise(\n    median_body_mass = median(body_mass_g, na.rm = TRUE)\n  )\n\nmedian_mass\n\n# A tibble: 3 × 2\n  species   median_body_mass\n  &lt;fct&gt;                &lt;dbl&gt;\n1 Adelie                3700\n2 Chinstrap             3700\n3 Gentoo                5000\n\n\nFound the median mass of each penguin species, displayed as a table. Shows that Gentoo penguins have the largest median body mass."
+  },
+  {
+    "objectID": "posts/milestone3_r/index.html#penguin-features",
+    "href": "posts/milestone3_r/index.html#penguin-features",
+    "title": "Penguin Analysis in R",
+    "section": "Penguin Features",
+    "text": "Penguin Features\n\npenguin_features &lt;- penguins |&gt; \n  group_by(species, sex) |&gt; \n  summarise(\n    mean_bill_length = mean(bill_length_mm, na.rm = TRUE), \n    mean_bill_depth = mean(bill_depth_mm, na.rm = TRUE),\n    mean_flipper_length = mean(flipper_length_mm, na.rm = TRUE), \n    mean_body_mass = mean(body_mass_g, na.rm = TRUE)\n  )\n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by species and sex.\nℹ Output is grouped by species.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(species, sex))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\npenguin_features\n\n# A tibble: 8 × 6\n# Groups:   species [3]\n  species   sex    mean_bill_length mean_bill_depth mean_flipper_length\n  &lt;fct&gt;     &lt;fct&gt;             &lt;dbl&gt;           &lt;dbl&gt;               &lt;dbl&gt;\n1 Adelie    female             37.3            17.6                188.\n2 Adelie    male               40.4            19.1                192.\n3 Adelie    &lt;NA&gt;               37.8            18.3                186.\n4 Chinstrap female             46.6            17.6                192.\n5 Chinstrap male               51.1            19.3                200.\n6 Gentoo    female             45.6            14.2                213.\n7 Gentoo    male               49.5            15.7                222.\n8 Gentoo    &lt;NA&gt;               45.6            14.6                216.\n# ℹ 1 more variable: mean_body_mass &lt;dbl&gt;\n\n\nCalculted the average features of the penguins by species and gender. Output the data as a table."
+  },
+  {
+    "objectID": "posts/milestone3_r/index.html#penguin-mass-graph",
+    "href": "posts/milestone3_r/index.html#penguin-mass-graph",
+    "title": "Penguin Analysis in R",
+    "section": "Penguin Mass Graph",
+    "text": "Penguin Mass Graph\n\nggplot(penguin_features, \n       aes(x = species, y = mean_body_mass, fill = sex)) +\n  geom_col(position = \"dodge\") +\n  labs(\n    title = \"Mean Body Mass of Penguins\",\n    x = \"Species\",\n    y = \"Mean Body Mass (g)\",\n    fill = \"Sex\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Mean body mass of penguins by species and sex.\n\n\n\n\n\nThe graph displays the mean body mass of penguins by species and sex. Gentoo penguins have the highest average body mass, while the average male penguins are larger than the average female penguins within each species."
   },
   {
     "objectID": "posts/first-weeks/index.html",
@@ -67,6 +95,34 @@
     "href": "posts/milestone3_py/index.html",
     "title": "Penguin Analysis in Python",
     "section": "",
-    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER."
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER.\n\nfrom palmerpenguins import load_penguins\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\npenguins = load_penguins()"
+  },
+  {
+    "objectID": "posts/milestone3_py/index.html#data---palmer-penguins",
+    "href": "posts/milestone3_py/index.html#data---palmer-penguins",
+    "title": "Penguin Analysis in Python",
+    "section": "",
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER.\n\nfrom palmerpenguins import load_penguins\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\npenguins = load_penguins()"
+  },
+  {
+    "objectID": "posts/milestone3_py/index.html#species-median-mass",
+    "href": "posts/milestone3_py/index.html#species-median-mass",
+    "title": "Penguin Analysis in Python",
+    "section": "Species Median Mass",
+    "text": "Species Median Mass\n\nmedian_mass = (\n    penguins\n    .groupby(\"species\", as_index=False)\n    .agg(median_body_mass=(\"body_mass_g\", \"median\"))\n)\n\nmedian_mass\n\n\n\n\n\n\n\n\nspecies\nmedian_body_mass\n\n\n\n\n0\nAdelie\n3700.0\n\n\n1\nChinstrap\n3700.0\n\n\n2\nGentoo\n5000.0\n\n\n\n\n\n\n\nI calculated the median body mass for each penguin species and displayed the results as a table. The results show that Gentoo penguins have the largest median body mass."
+  },
+  {
+    "objectID": "posts/milestone3_py/index.html#penguin-features",
+    "href": "posts/milestone3_py/index.html#penguin-features",
+    "title": "Penguin Analysis in Python",
+    "section": "Penguin Features",
+    "text": "Penguin Features\n\npenguin_features = (\n    penguins\n    .groupby([\"species\", \"sex\"], as_index=False)\n    .agg(\n        mean_bill_length=(\"bill_length_mm\", \"mean\"),\n        mean_bill_depth=(\"bill_depth_mm\", \"mean\"),\n        mean_flipper_length=(\"flipper_length_mm\", \"mean\"),\n        mean_body_mass=(\"body_mass_g\", \"mean\")\n    )\n)\n\npenguin_features\n\n\n\n\n\n\n\n\nspecies\nsex\nmean_bill_length\nmean_bill_depth\nmean_flipper_length\nmean_body_mass\n\n\n\n\n0\nAdelie\nfemale\n37.257534\n17.621918\n187.794521\n3368.835616\n\n\n1\nAdelie\nmale\n40.390411\n19.072603\n192.410959\n4043.493151\n\n\n2\nChinstrap\nfemale\n46.573529\n17.588235\n191.735294\n3527.205882\n\n\n3\nChinstrap\nmale\n51.094118\n19.252941\n199.911765\n3938.970588\n\n\n4\nGentoo\nfemale\n45.563793\n14.237931\n212.706897\n4679.741379\n\n\n5\nGentoo\nmale\n49.473770\n15.718033\n221.540984\n5484.836066\n\n\n\n\n\n\n\nI calculated the average physical features of penguins by species and sex and displayed the results as a table."
+  },
+  {
+    "objectID": "posts/milestone3_py/index.html#penguin-mass-graph",
+    "href": "posts/milestone3_py/index.html#penguin-mass-graph",
+    "title": "Penguin Analysis in Python",
+    "section": "Penguin Mass Graph",
+    "text": "Penguin Mass Graph\n\nfig, ax = plt.subplots()\n\npenguin_features.pivot(\n    index=\"species\",\n    columns=\"sex\",\n    values=\"mean_body_mass\"\n).plot(\n    kind=\"bar\",\n    ax=ax\n)\n\nax.set_title(\"Mean Body Mass of Penguins\")\nax.set_xlabel(\"Species\")\nax.set_ylabel(\"Mean Body Mass (g)\")\nax.legend(title=\"Sex\")\n\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Mean body mass of penguins by species and sex.\n\n\n\n\n\nThe graph displays the mean body mass of penguins by species and sex. Gentoo penguins have the highest average body mass, while the average male penguins are larger than the average female penguins within each species."
   }
 ]
